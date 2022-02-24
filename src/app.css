@@ -1,0 +1,40 @@
+h1 {
+    color: rgb(0, 112, 210);
+}
+p {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: rgb(62, 62, 60);
+}
+.app {
+    
+    height: 100vh;
+    overflow: scroll;
+}
+
+.container{
+  background-color: blanchedalmond;
+  border-radius: 25px;
+  padding: 10px;
+
+}
+
+.button{
+  
+}
+
+.parent{
+  display: flex;
+  
+}
+
+.child1{
+ 
+}
+
+.child2{
+  
+}
+
+.child3{
+ 
+}

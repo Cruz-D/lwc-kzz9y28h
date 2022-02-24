@@ -1,0 +1,100 @@
+<template>
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<th colspan="3">
+						<div class="slds-m-top_medium slds-m-bottom_x-large">
+							<lightning-button-group>
+								<!-- DECLARACION BOTONES -->
+								<lightning-button variant="brand" label="Seleccionar todas" title="Primary action" onclick={handleClick}
+									class="slds-m-left_x-small"></lightning-button>
+
+
+								<lightning-button variant="brand-outline" label="piscinas" title="Primary action with lighter look"
+									onclick={getButton} class="slds-m-left_x-small" data-id="test">
+								</lightning-button>
+
+								<div if:true={flag.data}>
+									<lightning-button variant="brand" label="piscina" title="Primary action" onclick={handleClick}
+										class="slds-m-left_x-small" data-id="botonoculto"></lightning-button>
+								</div>
+
+
+
+								<lightning-button variant="brand-outline" label="socorrismo" title="Primary action with lighter look"
+									onclick={handleClick} class="slds-m-left_x-small">
+								</lightning-button>
+								<lightning-button variant="brand-outline" label="conserjeria" title="Primary action with lighter look"
+									onclick={handleClick} class="slds-m-left_x-small">
+								</lightning-button>
+								<lightning-button variant="brand-outline" label="limpieza" title="Primary action with lighter look"
+									onclick={handleClick} class="slds-m-left_x-small">
+								</lightning-button>
+								<lightning-button variant="brand-outline" label="jardineria" title="Primary action with lighter look"
+									onclick={handleClick} class="slds-m-left_x-small">
+								</lightning-button>
+								<lightning-button variant="brand-outline" label="mantenimiento" title="Primary action with lighter look"
+									onclick={handleClick} class="slds-m-left_x-small">
+								</lightning-button>
+								<lightning-button variant="brand-outline" label="obras" title="Primary action with lighter look"
+									onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+							</lightning-button-group>
+						</div>
+
+					</th>
+				</tr>
+			</thead>
+			<tbody class=tabla>
+				<tr>
+					<td>
+						<div class=child1>
+							<lightning-combobox name="progress" label="Momento (días)" value={value}
+								placeholder="Selecciona el momento" options={options} onchange={handleChange}></lightning-combobox>
+							<lightning-combobox name="progress" label="Fecha" value={} placeholder="Select Progress" options={options}
+								onchange={handleChange}></lightning-combobox>
+							<lightning-combobox name="progress" label="Status" value={value} placeholder="Select Progress"
+								options={options} onchange={handleChange}></lightning-combobox>
+						</div>
+					</td>
+					<td>
+						<div class=child2>
+							<lightning-combobox name="progress" label="Fecha" value={value} placeholder="Selecciona una ciudad"
+								options={options} onchange={handleChange}></lightning-combobox>
+							<lightning-combobox name="progress" label="Zona" value={value} placeholder="Selecciona la zona"
+								options={options} onchange={handleChange}></lightning-combobox>
+							<lightning-combobox name="progress" label="Instalación" value={value}
+								placeholder="Selecciona una instalación'" options={options} onchange={handleChange}>
+							</lightning-combobox>
+						</div>
+					</td>
+					<td>
+						<div class=child3>
+							<lightning-combobox name="progress" label="Coordinador/Supervisor" value={value}
+								placeholder="Selecciona el coordinador/supervisor" options={options} onchange={handleChange}>
+							</lightning-combobox>
+							<lightning-combobox name="progress" label="Empleado" value={value} placeholder="Selecciona el empleado"
+								options={options} onchange={handleChange}></lightning-combobox>
+							<lightning-combobox name="progress" label="Tipo" value={value} placeholder="Selecciona un tipo"
+								options={options} onchange={handleChange}></lightning-combobox>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<div class="slds-m-top_medium slds-m-bottom_x-large">
+							<lightning-button-group>
+								<lightning-button label="Restaurar filtros" variant="brand-outline"></lightning-button>
+								<lightning-button label="Buscar" variant="brand"></lightning-button>
+							</lightning-button-group>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<div data-id="test2">
+		<h1>comeme la tostada {name} --------------> {test}</h1>
+	</div>
+</template>
